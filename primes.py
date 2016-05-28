@@ -2,8 +2,8 @@ from collections import deque
 import math
 
 
-def lol(x):
-    primes = deque([2,3])
+def primelist(x):
+    primes = [2,3]
     numbers = deque([])
     for i in range(4,x):
         numbers.append(i)
@@ -18,5 +18,5 @@ def lol(x):
                     break
         if prime:
             primes.append(s)
-            print(s)
+            #print(s)
     return primes
